@@ -11,7 +11,7 @@
   "license": "ISC",
   "devDependencies": {
     "@babel/preset-react": "^7.14.5",
-    "laravel-mix": "^6.0.31"
+    "laravel-mix": "^6.0.34"
   },
   "dependencies": {
     "react": "^17.0.2",

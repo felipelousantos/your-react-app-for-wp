@@ -8,15 +8,15 @@
 
 function your_react_app_for_wp_register_script() {
 
-	wp_register_script( 'your-react-app-for-wp', plugins_url( 'app/dist/index.js', __FILE__ ) );
+	wp_register_script( 'your-react-app-for-wp-script', plugins_url( 'app/dist/index.js', __FILE__ ) );
 
 }
 
-add_action( 'wp_enqueue_scripts', 'your_react_app_for_wp' );
+add_action( 'wp_enqueue_scripts', 'your_react_app_for_wp_register_script' );
 
 function your_react_app_for_wp() {
 
-	wp_enqueue_script( 'your-react-app-for-wp' );
+	wp_enqueue_script( 'your-react-app-for-wp-script' );
 
 	return "<div id='your-react-app-for-wp'></div>";
 }
